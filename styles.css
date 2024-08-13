@@ -1,0 +1,127 @@
+body {
+    font-family: 'Libre Baskerville', serif !important;
+    color: #4A4A4A !important;
+    background-color: #F4F1EA !important;
+}
+
+.navbar {
+    margin-bottom: 20px !important;
+    background-color: #D3B8AE !important; /* Soft, earthy brown */
+}
+
+.navbar-brand {
+    font-weight: bold !important;
+    color: #4A4A4A !important;
+}
+
+.navbar-nav .nav-link {
+    color: #4A4A4A !important;
+    font-size: 1.1rem !important;
+    padding: 30px !important;
+}
+
+/* Styling for active link */
+.navbar-nav .nav-link.active {
+    font-weight: bold !important;
+    color: #3B2F2F !important; 
+}
+
+/* Dropdown Menu Styles */
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: #557558 !important; /* Soft, earthy brown to match navbar background */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; /* Subtle shadow to match card styles */
+}
+
+/* Dropdown Item Styles */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #c1bda1 !important; /* Dark gray text for better readability */
+    font-size: 1rem !important; /* Font size consistent with navbar links */
+    font-weight: bold !important; /* Bold text */
+    padding: 10px 20px !important; /* Padding for better alignment */
+    transition: background-color 0.3s ease !important; /* Smooth background color transition */
+}
+
+/* Dropdown Item Hover */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #E3E0D8 !important; /* Light cream background on hover */
+    color: #4A4A4A !important; /* Dark gray text on hover */
+}
+
+/* Remove border from dropdown items */
+.navbar-nav .nav-item .dropdown-menu .dropdown-divider {
+    border-top: 1px solid #4A4A4A !important; /* Match divider color with text */
+}
+
+
+.hero {
+    background-color: #3B2F2F !important; /* Dark brown background */
+    color: #E3E0D8 !important;
+    height: 400px !important; /* Adjust height as needed */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 20px !important;
+}
+
+.hero-content h1 {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+}
+
+/* Card styles */
+.card {
+    border: none !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+    height: 200px !important;
+    object-fit: cover !important;
+}
+
+.card-title {
+    font-size: 1.25rem !important;
+    color: #6b4f4f !important; /* Warm, earthy color */
+}
+
+.card-img-top:hover {
+    transform: scale(1.05) !important;
+}
+
+/* About Me Section Styles */
+.about-me {
+    background-color: #E3E0D8; /* Light cream */
+    color: #4A4A4A;
+    padding: 60px 0; /* Vertical padding for spacing */
+    width: 100vw; /* Full width of the viewport */
+    margin-left: calc(-50vw + 50%); /* Center the content while making it full-width */
+}
+
+.about-me-container {
+    max-width: 1200px; /* Optional: Limit the max width of the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Horizontal padding for content */
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #3B2F2F !important; /* Dark brown */
+    color: #E3E0D8 !important; /* Creamy white text */
+}
+

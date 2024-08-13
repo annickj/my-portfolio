@@ -1,0 +1,171 @@
+/* Background and Global Styles */
+body {
+    background-color: #000000; /* Absolute black background */
+    color: #ffffff; /* White text */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to bottom, #595959, #ffffff); /* Silver gradient */
+    border-radius: 15px !important; /* Rounded edges */
+    padding: 10px 20px !important; /* Spacing */
+    margin: 0 auto !important; /* Centered */
+    max-width: 1000px !important; /* Limit width */
+    position: relative;
+    top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for 3D effect */
+}
+
+/* Centering Navbar Brand and Links */
+.navbar-brand {
+    font-weight: bold;
+    color: #333 !important; /* Dark gray for the brand */
+}
+
+/* Flexbox container for navbar links */
+.navbar-nav {
+    flex: 1; /* Allow nav items to take up available space */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 0; /* Remove default margin */
+}
+
+/* Individual nav item */
+.navbar-nav .nav-item {
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+/* Navigation link styles */
+.navbar-nav .nav-link {
+    color: #333 !important; /* Dark gray for links */
+    font-weight: bold !important; /* Thicker text */
+    transition: color 0.3s ease !important; /* Smooth transition */
+    padding: 0 25px !important; /* Increased padding for more spacing */
+    display: flex; /* Use flexbox for link alignment */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Add vertical lines between links on larger screens */
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        border-right: 1px solid #7d7c7c !important; /* Vertical line */
+    }
+
+    /* Remove border-right from the last nav-link */
+    .navbar-nav .nav-item:last-child .nav-link {
+        border-right: none !important;
+    }
+}
+
+/* Dropdown Menu Styles */
+.navbar-nav .nav-item .dropdown-menu {
+    background: linear-gradient(to bottom, #595959, #ffffff); /* Silver gradient */
+    border: none; /* Remove default border */
+    border-radius: 15px !important; /* Match rounded edges */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for 3D effect */
+}
+
+/* Dropdown Item Styles */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #333 !important; /* Dark gray for dropdown items */
+    font-weight: bold !important; /* Bold text */
+    transition: background-color 0.3s ease !important; /* Smooth background color transition */
+}
+
+/* Dropdown Item Hover */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #000 !important; /* Black background on hover */
+    color: #ffffff !important; /* White text on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #000; /* Absolute black background for hero */
+    color: #ffffff; /* White text */
+    padding: 60px 0; /* Padding for hero section */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Large heading */
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem; /* Description text */
+    margin-top: 20px;
+}
+
+.hero img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Spacing above the image */
+}
+
+/* Article Section Styles */
+.card {
+    border: none;
+}
+
+.card-body {
+    background-color: #ffffff; /* White background for card */
+    color: #000000; /* Black text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.card-title {
+    font-size: 2rem; /* Large title */
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.125rem; /* Body text */
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Absolute black */
+    color: #ffffff; /* White text */
+    padding: 20px 0 !important;
+}
+
+.footer-link {
+    color: #ffffff !important; /* White text */
+    text-decoration: none !important;
+    margin: 0 20px !important; /* Increased space between links */
+    transition: color 0.3s ease !important; /* Smooth transition */
+}
+
+.footer-link:hover {
+    color: #f0f0f0 !important; /* Light gray on hover */
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    /* Center and adjust navbar links on mobile */
+    .navbar-nav {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .navbar-nav .nav-link {
+        border-left: none !important; /* Remove vertical line breaks */
+        border-bottom: 1px solid #7d7c7c !important; /* Horizontal line breaks */
+        width: 100%; /* Full width links */
+        text-align: center; /* Center text */
+        padding: 10px 0 !important; /* Padding for mobile */
+    }
+
+    .navbar-nav .nav-item:last-child .nav-link {
+        border-bottom: none !important; /* Remove border from the last item */
+    }
+}
+
+

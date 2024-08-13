@@ -1,0 +1,78 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #000000; /* Absolute black */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff; /* White text */
+}
+
+.navbar-brand:hover {
+    color: #f0f0f0; /* Light gray on hover */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White text */
+    margin-right: 60px !important; /* Space between links */
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #afa9a9 !important; /* Light gray on hover */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold !important;
+    color: #f0f0f0; /* Ensure active link is also white */
+}
+
+/* Dropdown Menu Styles */
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: #000000; /* Absolute black */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+/* Dropdown Item Styles */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #ffffff !important; /* White text */
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+    font-weight: bold !important; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Dropdown Item Hover */
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #afa9a9 !important; /* Light gray background on hover */
+    color: #000000 !important; /* Black text on hover */
+}
+
+/* Remove border from dropdown items */
+.navbar-nav .nav-item .dropdown-menu .dropdown-divider {
+    border-top: 1px solid #7d7c7c !important; /* Vertical line breaks */
+}
+
+.card-title {
+    font-size: 1.8rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Absolute black */
+    color: #ffffff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.footer a:hover {
+    color: #949393 !important; /* Light gray on hover */
+}
+
