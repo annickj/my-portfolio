@@ -1,6 +1,6 @@
 /* Navbar Styles */
 .navbar {
-    background-color: #000000; /* Absolute black */
+    background-color: #002dce !important; 
 }
 
 .navbar-brand {
@@ -30,7 +30,7 @@
 
 /* Dropdown Menu Styles */
 .navbar-nav .nav-item .dropdown-menu {
-    background-color: #000000; /* Absolute black */
+    background-color: #002dce !important; /* Absolute black */
     border: none; /* Remove default border */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
 }
@@ -45,7 +45,7 @@
 
 /* Dropdown Item Hover */
 .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-    background-color: #afa9a9 !important; /* Light gray background on hover */
+    background-color: #f3ebeb !important; /* Light gray background on hover */
     color: #000000 !important; /* Black text on hover */
 }
 

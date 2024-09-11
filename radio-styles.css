@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    font-family: 'Rubik', sans-serif; /* Rounded font */
+    background-color: #000000; /* Absolute black background */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #141414 !important;
+    padding: 20px;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-size: 1.4rem;
+    text-decoration: none !important;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Removes bullets */
+    padding-left: 0; /* Removes padding on the left */
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: #f07b85 !important; /* Pink on hover */
+    text-decoration: none;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #1a1a1a !important;
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: #ffffff !important;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #f07b85 !important; /* Pink hover background */
+    color: #ffffff !important; /* White text on hover */
+}
+
+.navbar .dropdown-toggle::after {
+    border-top: 0.3em solid #ffffff; /* Arrow color */
+}
+
+
+/* Hero Section */
+.hero {
+    height: 50vh; /* Adjust hero height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+}
+
+.hero .hero-title {
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+.hero .hero-subtitle {
+    font-size: 1.5rem;
+    color: #dddddd;
+}
+
+/* Film Section */
+.film-section {
+    padding: 40px;
+}
+
+.film-row {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.film-card {
+    flex-shrink: 0;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.film-card:hover {
+    transform: scale(1.1);
+}
+
+.film-thumbnail iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+}
+
+.film-title {
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.footer .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .footer-link:hover {
+    color: #f07b85;
+}

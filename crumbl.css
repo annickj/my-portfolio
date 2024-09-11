@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    font-family: 'Comic Neue', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Absolute black text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #f8e1e7; /* Crumbl pink */
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: #000000 !important; /* Absolute black text */
+    font-weight: bold;
+    padding: 20px !important;
+}
+
+.nav-link:hover {
+    color: #f07b85 !important; /* Hover pink */
+}
+
+/* Dropdown Menu */
+.navbar-nav .dropdown-menu {
+    background-color: #f8e1e7; /* Crumbl pink background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.navbar-nav .dropdown-item {
+    color: #000000; /* Black text */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #e96c78; /* Slightly darker pink for hover effect */
+    color: #ffffff;
+}
+
+/* Social Media Feed Section */
+.feed {
+    padding: 20px;
+}
+
+/* Grid for Social Media Feed */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Larger card grid */
+    gap: 30px; /* Larger space between cards */
+}
+
+/* Card Styles for Specific Aspect Ratios */
+.card {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Bigger shadow for larger card */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, z-index 0.5s ease; /* Added z-index transition */
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.4) translateZ(50px); /* Much larger zoom and move forward */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* More depth with shadow */
+    z-index: 10; /* Bring card above others */
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Set aspect ratio for each card */
+.card-1 {
+    aspect-ratio: 869 / 1600;
+}
+
+.card-2 {
+    aspect-ratio: 1192 / 2142;
+}
+
+.card-3 {
+    aspect-ratio: 1192 / 1936;
+}
+
+.card-4 {
+    aspect-ratio: 1192 / 1762;
+}
+
+.card-5 {
+    aspect-ratio: 1192 / 668;
+}
+
+.card-6 {
+    aspect-ratio: 1192 / 546;
+}
+
+.card-7 {
+    aspect-ratio: 902 / 1046;
+}
+
+.card-8 {
+    aspect-ratio: 840 / 1548;
+}
+
+.card-9 {
+    aspect-ratio: 868 / 1600;
+}
+
+/* Hero Section */
+.hero {
+    padding: 40px 0;
+    background-color: #f8e1e7;
+    color: #000000;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Blurry effect */
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Absolute black background */
+    color: #ffffff; /* White text */
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}

@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Portfolio</title>
+    <meta name="description" content="Annick's Portfolio with Sirencore Aesthetic">
+    <title>Annick's Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"> <!-- Rounded Font -->
 </head>
+
 <body>
-    <!-- Your content here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">A J</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Copywriting
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="apple.html">Apple</a></li>
-                        <li><a class="dropdown-item" href="crumbl.html">Crumbl</a></li>
-                        <li><a class="dropdown-item" href="radio.html">Radio</a></li>
-                        <li><a class="dropdown-item" href="pixie-dust.html">Pixie Dust Princess Parties</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="film.html">Film</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="environmental.html">Environmental</a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">A J</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Copywriting</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="apple.html">Apple</a></li>
+                            <li><a class="dropdown-item" href="crumbl.html">Crumbl</a></li>
+                            <li><a class="dropdown-item" href="radio.html">Radio</a></li>
+                            <li><a class="dropdown-item" href="pixie-dust.html">Pixie Dust Princess Parties</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="film.html">Film</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="environmental.html">Environmental</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
 
+    <!-- Hero Section with 1080p Video -->
     <header class="hero text-center d-flex align-items-center justify-content-center">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
+        <div class="video-container">
+            <video autoplay muted loop class="hero-video">
+                <source src="https://github.com/annickj/my-portfolio/raw/main/website%20landing.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay">
+            <div class="hero-content">
+
+            </div>
         </div>
     </header>
 
-
+    <!-- Cards Section -->
     <main class="container mt-5">
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card" style="cursor: pointer;" onclick="window.location.href='news.html';">
+                <div class="card siren-card" onclick="window.location.href='news.html';">
                     <img src="https://cdn.pixabay.com/photo/2013/07/12/19/16/newspaper-154444_1280.png" class="card-img-top" alt="News Work">
                     <div class="card-body">
                         <h5 class="card-title">News Work</h5>
@@ -66,7 +76,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card" style="cursor: pointer;" onclick="window.location.href='apple.html';">
+                <div class="card siren-card" onclick="window.location.href='apple.html';">
                     <img src="https://cdn.pixabay.com/photo/2013/07/12/14/49/mac-148867_1280.png" class="card-img-top" alt="Apple Copywriting">
                     <div class="card-body">
                         <h5 class="card-title">Apple Copywriting</h5>
@@ -78,10 +88,12 @@
         <div class="about-me">
             <div class="about-me-container">
                 <h2 class="text-center mb-4">About Me</h2>
-                <p>Hello! I'm Annick, a passionate and creative professional with a love for storytelling through design and writing. My work ranges from engaging news content to sleek copywriting for top brands. I believe in the power of aesthetics to communicate and inspire, and I strive to bring that vision into everything I do.</p>
+                <p>Hello! I'm Annick, a passionate creative professional with a love for storytelling. My work ranges from engaging news content to sleek copywriting for top brands. I believe in the power of aesthetics to communicate and inspire, and I strive to bring that vision into everything I do.</p>
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-3">
         <div class="container">
             <p>&copy; 2024 Annick's Portfolio. All rights reserved.</p>
@@ -92,18 +104,10 @@
             </div>
         </div>
     </footer>
-    
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    $('a[href*="#"]').on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top
-            }, 500, 'linear');
-        });
-</script>
 </body>
+
 </html>

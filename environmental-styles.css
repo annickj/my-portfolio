@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Rubik', sans-serif; /* Rounded font */
+    background-color: #000000; /* Absolute black background */
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    padding: 20px 30px;
+}
+
+.navbar.scrolled {
+    background-color: #1a1a1a; /* Dark background on scroll */
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-size: 1.4rem;
+}
+
+.navbar-nav {
+    gap: 40px; /* Increased spacing between links */
+    justify-content: space-between;
+}
+
+.nav-link:hover {
+    color: #f07b85 !important; /* Pink on hover */
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f07b85;
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Full underline on hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.hero .hero-content {
+    max-width: 1080px;
+    width: 100%;
+    text-align: center;
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero h1, .hero h2 {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+/* Project Section */
+.project-section {
+    padding: 50px;
+    background: linear-gradient(180deg, #6a1b9a, #f07b85, #ffcc80);
+    color: #0a0909 !important;
+    width: 100%; /* Ensure full width for background */
+   
+}
+
+.project-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Podcast Section */
+.podcast-section {
+    padding: 80px 10%;
+    background-color: #111;
+    color: #fff !important;
+    text-align: center;
+}
+
+.podcast-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.podcast-section iframe {
+    height: 600px; /* Increased height for thumbnails */
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.footer-link {
+    color: #ffffff;
+}
+
+.footer-link:hover {
+    color: #f07b85;
+}

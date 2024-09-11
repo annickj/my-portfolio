@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+    font-family: 'Arsenal', sans-serif !important; /* Updated to Arsenal */
+    background-color: #141414; /* N-style dark background */
+    color: #ffffff;
+}
+
+/* Navbar N Style */
+.n-nav {
+    background-color: #141414 !important;
+    padding: 20px 50px;
+}
+
+.n-brand {
+    color: #16ba21 !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Arsenal', sans-serif !important; /* Updated to Arsenal */
+}
+
+.n-links .nav-link {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    padding: 10px 50px !important;
+    font-family: 'Arsenal', sans-serif !important; /* Updated to Arsenal */
+}
+
+.n-links .nav-link:hover {
+    color: #16ba21 !important;
+}
+
+.dropdown-menu {
+    background-color: #333 !important;
+    border: none;
+}
+
+.dropdown-item {
+    color: #ffffff !important;
+    font-family: 'Arsenal', sans-serif !important; /* Updated to Arsenal */
+}
+
+.dropdown-item:hover {
+    background-color: #16ba21 !important;
+}
+
+/* Hero Section */
+.n-hero {
+    max-width: 100%;
+    max-height: 100%;
+    background: rgba(20, 20, 20, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.n-hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Arsenal', sans-serif; /* Updated to Arsenal */
+}
+
+/* N Style Cards with Sharp Corners */
+.n-main {
+    background-color: #141414;
+    padding: 40px 0;
+    margin: 0px;
+}
+
+.n-section-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Arsenal', sans-serif; /* Updated to Arsenal */
+}
+
+.n-card {
+    background-color: #333333;
+    border: none;
+    border-radius: 0; /* Sharp corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.n-card:hover {
+    transform: scale(1.05);
+}
+
+.n-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.n-card .card-body {
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.n-card .card-title {
+    font-size: 1.2rem;
+    font-family: 'Arsenal', sans-serif; /* Updated to Arsenal */
+}
+
+/* Footer */
+.n-footer {
+    background-color: #141414;
+}
+
+.footer-link {
+    color: #ffffff !important;
+}
+
+.footer-link:hover {
+    color: #16ba21 !important;
+}
